@@ -23,10 +23,11 @@ var lowerValue = "abcdefghijklmnopqrstuvwxyz";
 var password = "";
 var superArray = "";
 var count = 0
-var randomSpecial = password += specialValue.charAt(Math.floor(Math.random() * (specialValue.length - 1)));
-var randomNum = password += numValue.charAt(Math.floor(Math.random() * (numValue.length - 1)));
-var randomUpper = password += upperValue.charAt(Math.floor(Math.random() * (upperValue.length - 1)));
-var randomLower = password += lowerValue.charAt(Math.floor(Math.random() * (lowerValue.length - 1)));
+
+function randomSpecial (password) { specialValue.charAt(Math.floor(Math.random() * (specialValue.length - 1)));}
+function randomNum (password) { numValue.charAt(Math.floor(Math.random() * (numValue.length - 1)));}
+function randomUpper (password) { upperValue.charAt(Math.floor(Math.random() * (upperValue.length - 1)));}
+function randomLower (password) { lowerValue.charAt(Math.floor(Math.random() * (lowerValue.length - 1)));}
 
 passwordLength = prompt("How many characters would you like your password to contain?")
 specialChar = confirm("Click OK to include special characters.")
