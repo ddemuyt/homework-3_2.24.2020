@@ -16,6 +16,12 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 // What I need for this to work
+var specialValue = "!@#$%^&*()_+".split("");
+var numValue = "1234567890".split("");
+var upperValue = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+var lowerValue = "abcdefghijklmnopqrstuvwxyz".split("");
+var password = "";
+var superArray = "";
 
 prompt("How many characters would you like your password to contain?")
 
@@ -27,16 +33,26 @@ upperChar = confirm("Click OK to include uppercase characters.")
 
 lowerChar = confirm("Click OK to include lowercase characters.")
 
-// if (specialChar = true && numChar = true && upperChar = true && lowerChar = true) {}
+if (specialChar == true) {
+  password += specialValue.charAt(Math.floor(Math.random() * (specialValue.length - 1)))
+  superArray += 
+}
+if (numChar == true) {
+  passwordArray += numChar.charAt(Math.floor(Math.random() * (numChar.length - 1)))
+}
+if (upperChar == true) {
+  passwordArray += upperChar.charAt(Math.floor(Math.random() * (upperChar.length - 1)))
+}
+if (lowerChar == true) {
+  passwordArray += lowerChar.charAt(Math.floor(Math.random() * (lowerChar.length - 1)))
+}
 
 
-var specialValue = "!@#$%^&*()_+";
-var numValue = "1234567890";
-var upperValue = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var lowerValue = "abcdefghijklmnopqrstuvwxyz";
 
-for(var i = 0; i <= password; i++) {
-  passwordText = passwordText + specialValue.charAt(Math.floor(Math.random() * Math.floor(specialValue.length - 1)));
+
+for(var i = 0; i<= pasword; i++) {
+//  passwordText = passwordText + specialValue.charAt(Math.floor(Math.random() * Math.floor(specialValue.length - 1)));
+  passwordText = passwordText + specialValue.charAt(Math.floor(Math.random() * (specialValue.length - 1)));
 }
 for(var i = 0; i <= password; i++) {
   passwordText = passwordText + numValue.charAt(Math.floor(Math.random() * Math.floor(numValue.length - 1)));
