@@ -22,29 +22,34 @@ var upperValue = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lowerValue = "abcdefghijklmnopqrstuvwxyz";
 var password = "";
 var superArray = "";
+var count = 0
+var randomSpecial = password += specialValue.charAt(Math.floor(Math.random() * (specialValue.length - 1)));
+var randomNum = password += numValue.charAt(Math.floor(Math.random() * (numValue.length - 1)));
+var randomUpper = password += upperValue.charAt(Math.floor(Math.random() * (upperValue.length - 1)));
+var randomLower = password += lowerValue.charAt(Math.floor(Math.random() * (lowerValue.length - 1)));
 
 passwordLength = prompt("How many characters would you like your password to contain?")
 specialChar = confirm("Click OK to include special characters.")
 numChar = confirm("Click OK to include numeric characters.")
 upperChar = confirm("Click OK to include uppercase characters.")
 lowerChar = confirm("Click OK to include lowercase characters.")
-var count = 0 
+
 
 
 if (specialChar == true) {
-  password += specialValue.charAt(Math.floor(Math.random() * (specialValue.length - 1)));
+  randomSpecial;
   superArray += specialValue;
 }
 if (numChar == true) {
-  password += numValue.charAt(Math.floor(Math.random() * (numValue.length - 1)));
+  randomNum;
   superArray += numValue;
 }
 if (upperChar == true) {
-  password += upperValue.charAt(Math.floor(Math.random() * (upperValue.length - 1)));
+  randomUpper;
   superArray += upperValue;
 }
 if (lowerChar == true) {
-  password += lowerValue.charAt(Math.floor(Math.random() * (lowerValue.length - 1)));
+  randomLower;
   superArray += lowerValue;
 }
 else {
@@ -54,24 +59,24 @@ else {
 for(count; count <= passwordLength; count++) {
   typeChosen=Math.floor(Math.random(1-4));
   if(typeChosen == 1) {
-    specialValue;
+    password += randomSpecial;
     count++;
   }
   else if (typeChosen == 2) {
-    numValue;
+    password += randomNum;
     count++;
   }
   else if (typeChosen == 3) {
-    upperValue;
+    password += randomUpper;
     count++;
   }
   else if (typeChosen == 4) {
-    lowerValue;
+    password += randomLower;
     count++;
   }
 
 }
-
+ alert(password)
 //  passwordText = passwordText + specialValue.charAt(Math.floor(Math.random() * Math.floor(specialValue.length - 1)));
 
 // for(var i = 0; i <= password; i++) {
