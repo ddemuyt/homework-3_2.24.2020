@@ -8,7 +8,7 @@ function generatePassword() {
   var upperValue = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var lowerValue = "abcdefghijklmnopqrstuvwxyz";
   var password = "";
-  var count = 0
+  var count = 0;
 
   //Sets up intial randomized numbers to adhere to clients' request.
   function randomSpecial() {
