@@ -4,9 +4,9 @@
 This project is a JavaScript focused application to create a randomly generated password with conditions set by the user. These conditions are what the length of the password is, if special characters are to be included, if numerical characters are to be included, if uppercase characters are to be included, and if lowercase characters are to be included.
 The logic is to have two main functions: one to generate the randomized password and one to start the former function and write the password text value into the HTML file on a button click.
 <br>
-<img src="../Assets/03-javascript-homework-genBtnhighlight.png">
+<img src="./Assets/03-javascript-homework-genBtnhighlight.png">
 <br>
-<img src="../Assets/03-javascript-homework-writepasswordfunction.png">
+<img src="./Assets/03-javascript-homework-writepasswordfunction.png">
 <br>
 Once the "Generate Password" button is pressed, the writePassword function begins. This sequentially starts the generatePassword function, selects the textarea in HTML with the id "password", and adds the value generatePassword creates to the textarea.
 The writePassword is the simpler of the two main functions, as it is only has a few moving parts.
@@ -43,7 +43,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ## Credits
-Lada Jerabek (https://github.com/mixicek)
-Angela Stevenson
-Danin Fluke (https://github.com/DaninFluke)
-TechnicalCafe - Random Password Generator Tutorial (HTML, CSS, JavaScript) (https://www.youtube.com/watch?v=9sT03jEwcaw)
+<ul>
+  <li>Lada Jerabek (https://github.com/mixicek)</li>
+  <li>Angela Stevenson</li>
+  <li>Danin Fluke (https://github.com/DaninFluke)</li>
+<li>TechnicalCafe - Random Password Generator Tutorial (HTML, CSS, JavaScript) (https://www.youtube.com/watch?v=9sT03jEwcaw)</li>
+</ul>
