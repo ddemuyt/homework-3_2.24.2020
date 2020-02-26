@@ -67,7 +67,7 @@ function generatePassword() {
     count++;
   }
 
-  //At least one type needs to be chosen before you can use while loop
+  //While loops to truly randomize which characters are selected for the remainder of the password
 
   while (count < passwordLength) {
     typeChosen = Math.ceil(Math.random() * 4);
@@ -100,5 +100,5 @@ function writePassword() {
 
 }
 
-// Add event listener to generate button
+// Add event listener to generated button
 generateBtn.addEventListener("click", writePassword);
