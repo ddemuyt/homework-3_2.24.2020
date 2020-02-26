@@ -43,7 +43,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ## Credits
-Lada Jerabek (https://github.com/mixicek)
-Angela Stevenson
-Danin Fluke (https://github.com/DaninFluke)
-TechnicalCafe - Random Password Generator Tutorial (HTML, CSS, JavaScript) (https://www.youtube.com/watch?v=9sT03jEwcaw)
+<ul>
+  <li>Lada Jerabek (https://github.com/mixicek)</li>
+  <li>Angela Stevenson</li>
+  <li>Danin Fluke (https://github.com/DaninFluke)</li>
+<li>TechnicalCafe - Random Password Generator Tutorial (HTML, CSS, JavaScript) (https://www.youtube.com/watch?v=9sT03jEwcaw)</li>
+</ul>
